@@ -3,14 +3,17 @@ import sys
 from PyQt6.QtWidgets import QApplication
 
 from view import View
+from model import Model
+from controller import Controller
 
 def main():
     calc = QApplication(sys.argv)
 
     view = View()
     view.show()
-    #Model()
-    #Controller()
+
+    model = Model()
+    controller = Controller(view, model)
 
     sys.exit(calc.exec())
 
