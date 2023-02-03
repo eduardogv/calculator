@@ -24,3 +24,6 @@ class Controller:
     def __calc_result(self):
         result = self.__model.exec_expr(self.__view.get_display_text())
         self.__view.set_display_text(result)
+
+
+        #comentario poara el github
